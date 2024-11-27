@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="./styles.css">
+  <title>Formulario</title>
+</head>
+
+<body>  <!--Aquí, podría ponerse un header-->
+  <h1>Bienvenidos a mi fiesta</h1>
+  <h2>Por favor, confirmar asistencia:</h2>
+
+  <form class="formulario"> 
+    Nombre <input type="text" name="name" id="name">
+    <br />  
+    Edad <input type="number" name="age" id="age">
+    <br />
+    <!--En esta sección los contenidos Nombre y Edad han quedado por afuera de las etiquetas, Además, sugiero usar la etiqueta label para asociar un texto descriptivo con el formulario.   así que yo lo redactaría como:
+
+     <form class="formulario">
+      <label for="name">Nombre:</label>
+      <input type="text" name="name" id="name" required>
+      <br />
+
+      <label for="age">Edad:</label>
+      <input type="number" name="age" id="age" min="1" required>
+      <br /   >-->
+
+    Nacionalidad   <!--¿Esto es un comentario? De ser así, no tiene ese fromato-->
+    <select name="nationality" id="nationality">
+      <option value="ar">Argentina</option>
+      <option value="mx">Mexicana</option>
+      <option value="per">Peruana</option>
+      <option value="vnzl">Venezolana</option>
+    </select>
+    <br />
+    <input type="submit">
+  </form>
+  <!--Considerando que esta sección corresponde a un menú desplegable y que no quiero que se vea encimado con la siguien te parte, yo lo redactaría así:
+
+      <label for="nationality">Nacionalidad:</label>
+      <select name="nationality" id="nationality" required>
+        <option value="ar">Argentina</option>
+        <option value="mx">Mexicana</option>
+        <option value="per">Peruana</option>
+        <option value="vnzl">Venezolana</option>
+      </select>
+      <br />
+  -->
+
+<!--Antes de terminar su formulario, podría considerar la opción de que algún invitado no asista, por lo que agegaría un botón o campo donde confirme asistencia-->
+
+  <div>
+    <h2>Lista de invitados</h2>
+  </div>
+<!--Esta sección considero que "queda al aire". Considero que se pretende que aquí se vaya registrando a quienes están invitados o tal vez se trate de un footer. De cualquier forma, cambiaría la forma de redactarlo.-->
+
+  <script src="../formulario.js"></script>
+</body>
+
+</html>
